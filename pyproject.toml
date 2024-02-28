@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "pymov"
 version = "0.0.1"
-description = "This library provides control of the U.S. Solid 1/4" Stainless Steel Motorized Ball Valve used in our QCM aparatus."
+description = "This library provides control of the U.S. Solid 1/4in Stainless Steel Motorized Ball Valve used in our QCM aparatus."
 authors = ["Nanosystems Lab <fnslab@hawaii.edu>"]
 repository = "https://github.com/nanosystemslab/pymov"
 documentation = "https://nanosystemslab.github.io/pymov/"
