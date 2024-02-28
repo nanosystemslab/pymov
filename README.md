@@ -42,6 +42,23 @@ To enable the code coverage reports, see [here](https://fpgmaas.github.io/cookie
 - Create a [new release](https://github.com/nanosystemslab/pymov/releases/new) on Github.
 - Create a new tag in the form `*.*.*`.
 
+## Citation
+
+If you use this project in your research, please cite it using the following BibTeX entry:
+
+```bibtex
+@software{pyhot,
+  author       = {Nakamura, Matthew},
+  title        = {pymov: U.S. Solid 1/4" Stainless Steel Motorized Ball Valve Control Library},
+  month        = feb,
+  year         = 2024,
+  publisher    = {Zenodo},
+  version      = {v0.0.1},
+  doi          = {},
+  url          = {}
+}
+```
+
 For more details, see [here](https://fpgmaas.github.io/cookiecutter-poetry/features/cicd/#how-to-trigger-a-release).
 
 ---
