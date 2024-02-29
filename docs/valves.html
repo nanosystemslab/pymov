@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Valves Class &#8212; pymov v0.0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <script src="_static/documentation_options.js?v=2fea6348"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to PyMOV’s documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="valves-class">
+<h1>Valves Class<a class="headerlink" href="#valves-class" title="Link to this heading">¶</a></h1>
+<p>The Valves class provides an interface for controlling a series of valves via serial communication. It allows for opening and closing individual or multiple valves sequentially.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="Valves">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Valves</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">port</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'/dev/tty.usbmodem12201'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">baudrate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">9600</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">valves_available</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">valve_status</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Valves" title="Link to this definition">¶</a></dt>
+<dd><p>Initialize the Valves class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>port</strong> (<em>str</em>) – The serial port to connect to.</p></li>
+<li><p><strong>baudrate</strong> (<em>int</em>) – The baud rate for serial communication.</p></li>
+<li><p><strong>valves_available</strong> (<em>Optional</em><em>[</em><em>List</em><em>[</em><em>str</em><em>]</em><em>]</em>) – List of available valves. Defaults to [“1”, “2”, “3”, “4”].</p></li>
+<li><p><strong>valve_status</strong> (<em>Optional</em><em>[</em><em>List</em><em>[</em><em>str</em><em>]</em><em>]</em>) – Initial status of each valve. Defaults to [“0”, “0”, “0”, “0”, “0”].</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="Valves.open_valve">
+<span class="sig-name descname"><span class="pre">open_valve</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mod_valve</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Valves.open_valve" title="Link to this definition">¶</a></dt>
+<dd><p>Opens the specified valve(s).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>mod_valve</strong> (<em>str</em>) – Valve(s) to open.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Valves.close_valve">
+<span class="sig-name descname"><span class="pre">close_valve</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mod_valve</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#Valves.close_valve" title="Link to this definition">¶</a></dt>
+<dd><p>Closes the specified valve(s).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>mod_valve</strong> (<em>str</em>) – Valve(s) to close.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="Valves.stop">
+<span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#Valves.stop" title="Link to this definition">¶</a></dt>
+<dd><p>Closes all valves.</p>
+</dd></dl>
+
+</dd></dl>
+
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading">¶</a></h2>
+<p>To use the Valves class:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pymov</span> <span class="kn">import</span> <span class="n">Valves</span>
+
+<span class="c1"># Initialize the Valves class</span>
+<span class="n">valve</span> <span class="o">=</span> <span class="n">Valves</span><span class="p">()</span>
+
+<span class="c1"># Open valves 1, 2, 3, and 4</span>
+<span class="n">valve</span><span class="o">.</span><span class="n">open_valve</span><span class="p">(</span><span class="s2">&quot;1234&quot;</span><span class="p">)</span>
+
+<span class="c1"># Close valves 2 and 3</span>
+<span class="n">valve</span><span class="o">.</span><span class="n">close_valve</span><span class="p">(</span><span class="s2">&quot;23&quot;</span><span class="p">)</span>
+
+<span class="c1"># Open valve 3</span>
+<span class="n">valve</span><span class="o">.</span><span class="n">open_valve</span><span class="p">(</span><span class="s2">&quot;3&quot;</span><span class="p">)</span>
+
+<span class="c1"># Close all valves</span>
+<span class="n">valve</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">pymov</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Valves Class</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#Valves"><code class="docutils literal notranslate"><span class="pre">Valves</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#usage">Usage</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to PyMOV’s documentation!</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, Nanosystem Lab.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+      |
+      <a href="_sources/valves.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
