@@ -16,7 +16,7 @@ This library provides control of the U.S. Solid 1/4" Stainless Steel Motorized B
 If you use this project in your research, please cite it using the following BibTeX entry:
 
 ```bibtex
-@software{pyhot,
+@software{pymov,
   author       = {Nakamura, Matthew},
   title        = {pymov: U.S. Solid 1/4" Stainless Steel Motorized Ball Valve Control Library},
   month        = feb,
