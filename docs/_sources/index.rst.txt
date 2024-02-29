@@ -6,12 +6,6 @@
 Welcome to PyMOV's documentation!
 =================================
 
-.. _back-to-github:
-
-Back to GitHub
---------------
-
-You can find the source code of this project on `GitHub <https://github.com/nanosystemslab/pymov>`_.
 
 .. toctree::
    :maxdepth: 2
@@ -23,5 +17,10 @@ Indices and tables
 ==================
 
 * :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+
+.. _back-to-github:
+
+Back to GitHub
+--------------
+
+You can find the source code of this project on `GitHub <https://github.com/nanosystemslab/pymov>`_.
