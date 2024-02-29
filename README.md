@@ -1,4 +1,4 @@
-# PyMoV
+# PyMOV
 
 [![Release](https://img.shields.io/github/v/release/nanosystemslab/pymov)](https://img.shields.io/github/v/release/nanosystemslab/pymov)
 [![Build status](https://img.shields.io/github/actions/workflow/status/nanosystemslab/pymov/main.yml?branch=main)](https://github.com/nanosystemslab/pymov/actions/workflows/main.yml?query=branch%3Amain)
