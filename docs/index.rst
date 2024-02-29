@@ -6,6 +6,13 @@
 Welcome to PyMOV's documentation!
 =================================
 
+.. _back-to-github:
+
+Back to GitHub
+--------------
+
+You can find the source code of this project on `GitHub <https://github.com/nanosystemslab/pymov>`_.
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
