@@ -11,7 +11,6 @@ This library provides control of the U.S. Solid 1/4" Stainless Steel Motorized B
 - **Github repository**: <https://github.com/nanosystemslab/pymov/>
 - **Documentation** <https://nanosystemslab.github.io/pymov/>
 
-
 ## Citation
 
 If you use this project in your research, please cite it using the following BibTeX entry:
