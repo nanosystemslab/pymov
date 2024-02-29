@@ -17,8 +17,8 @@ If you use this project in your research, please cite it using the following Bib
 
 ```bibtex
 @software{pymov,
-  author       = {Nakamura, Matthew},
-  title        = {pymov: U.S. Solid 1/4" Stainless Steel Motorized Ball Valve Control Library},
+  author       = {Nakamura, Matthew and Renzo Claudio, Josh},
+  title        = {PyMOV: U.S. Solid 1/4" Stainless Steel Motorized Ball Valve Control Library},
   month        = feb,
   year         = 2024,
   publisher    = {Zenodo},
