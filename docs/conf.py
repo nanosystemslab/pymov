@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = "pymov"
+project = "PyMOV"
 copyright = "2024, Nanosystem Lab"
 author = "Nanosystem Lab"
 release = "v0.0.1"
