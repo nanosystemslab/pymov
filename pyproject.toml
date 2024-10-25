@@ -19,6 +19,7 @@ Changelog = "https://github.com/nanosystemslab/pymov/releases"
 python = ">=3.9, <4.0"
 argparse = ">=1.4.0"
 pyserial = "^3.5"
+types-pyserial = "^3.5.0.20240826"
 
 [tool.poetry.dev-dependencies]
 Pygments = ">=2.10.0"

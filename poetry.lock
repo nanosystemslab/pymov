@@ -2056,6 +2056,17 @@ shellingham = ">=1.3.0"
 typing-extensions = ">=3.7.4.3"
 
 [[package]]
+name = "types-pyserial"
+version = "3.5.0.20240826"
+description = "Typing stubs for pyserial"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "types-pyserial-3.5.0.20240826.tar.gz", hash = "sha256:c88c603734410ad714fba85eb10f145dc592ccf1542bb958f12a8481722f37db"},
+    {file = "types_pyserial-3.5.0.20240826-py3-none-any.whl", hash = "sha256:f3fddafe593060afeec489ed6f6a18dcf05ae5eae1c8e9026b50c7960f00b076"},
+]
+
+[[package]]
 name = "typing-extensions"
 version = "4.12.2"
 description = "Backported and Experimental Type Hints for Python 3.8+"
@@ -2365,4 +2376,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9, <4.0"
-content-hash = "0ed7dd7edec7a7d768239554a166ef8ff71a20fb6729a0095635bb50bee44dfb"
+content-hash = "f28efdaa73059851c8016390d682a50580068730d0388f76fdede00d690368b3"
