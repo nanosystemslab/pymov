@@ -1,7 +1,5 @@
 """Command-line interface."""
 
-import argparse
-
 
 def main() -> None:
     """Pymov."""
