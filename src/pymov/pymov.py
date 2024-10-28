@@ -9,6 +9,7 @@ import serial
 
 class Valves:
     """Create Valves object."""
+    
     def __init__(
         self,
         port: str = "/dev/tty.usbmodem12201",
