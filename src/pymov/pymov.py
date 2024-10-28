@@ -1,12 +1,14 @@
 """Library for control of the U.S. Solid 1/4" Stainless Steel Motorized Ball Valve."""
 
 from time import sleep
-from typing import List, Optional
+from typing import List
+from typing import Optional
 
 import serial
 
 
 class Valves:
+    ''''''
     def __init__(
         self,
         port: str = "/dev/tty.usbmodem12201",
@@ -14,8 +16,7 @@ class Valves:
         valves_available: Optional[List[str]] = None,
         valve_status: Optional[List[str]] = None,
     ) -> None:
-        """
-        Initialize the Valves class.
+        """Initialize the Valves class.
 
         Arguments:
             port (str): The serial port to connect to.
@@ -39,8 +40,7 @@ class Valves:
         sleep(5)
 
     def open_valve(self, mod_valve: str) -> None:
-        """
-        Open the specified valve(s).
+        """Open the specified valve(s).
 
         Arguments:
             mod_valve (str): Valve(s) to open.
@@ -55,8 +55,7 @@ class Valves:
         self.ser.write(valve_status_str.encode(encoding="ascii", errors="strict"))
 
     def close_valve(self, mod_valve: str) -> None:
-        """
-        Close the specified valve(s).
+        """Close the specified valve(s).
 
         Arguments:
             mod_valve (str): Valve(s) to close.
