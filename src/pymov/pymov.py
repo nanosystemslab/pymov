@@ -27,10 +27,15 @@ class Valves:
         """Initialize the Valves class.
 
         Args:
-            port (str): Defines the serial port to connect to (default "/dev/tty.usbmodem12201").
-            baudrate (int): Defines the baud rate for serial communication (default 9600).
-            valves_available (Optional[List[str]]): Defines the list of available valves (default None).
-            valve_status (Optional[List[str]]): Defines the initial status of each valve (default None).
+            port (str): Defines the serial port to connect to (default
+                        "/dev/tty.usbmodem12201").
+            baudrate (int): Defines the baud rate for serial communication
+                        (default 9600).
+            valves_available (Optional[List[str]]): Defines the list of
+                                                    available valves
+                                                    (default None).
+            valve_status (Optional[List[str]]): Defines the initial status of
+                                                each valve (default None).
         """
         self.valves_available = valves_available or ["1", "2", "3", "4"]
         self.valve_status = valve_status or ["0", "0", "0", "0", "0"]
