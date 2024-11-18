@@ -34,6 +34,7 @@ def test_init(mock_serial: Any) -> None:
         xonxoff=False,
     )
 
+
 @patch("serial.Serial")
 def test_open_valve(mock_serial: Any) -> None:
     """Test opening Valve."""
