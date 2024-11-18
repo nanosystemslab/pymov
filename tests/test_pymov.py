@@ -3,18 +3,20 @@
 from typing import Any
 from unittest.mock import MagicMock
 from unittest.mock import patch
+
 import serial
+
 from pymov.pymov import Valves
 
 
 @patch("serial.Serial")
 def test_init(mock_serial: Any) -> None:
-    '''Test initialization of Valves object.'''
+    """Test initialization of Valves object."""
     mock_serial_instance = MagicMock()
     mock_serial.return_value = mock_serial_instance
 
     valves = Valves()
-    
+
     # Check initial attributes
     assert valves.valves_available == ["1", "2", "3", "4"]
     assert valves.valve_status == ["0", "0", "0", "0", "0"]
@@ -34,7 +36,7 @@ def test_init(mock_serial: Any) -> None:
 
 @patch("serial.Serial")
 def test_open_valve(mock_serial: Any) -> None:
-    '''Test opening Valve.'''
+    """Test opening Valve."""
     mock_serial_instance = MagicMock()
     mock_serial.return_value = mock_serial_instance
 
@@ -50,7 +52,7 @@ def test_open_valve(mock_serial: Any) -> None:
 
 @patch("serial.Serial")
 def test_close_valve(mock_serial: Any) -> None:
-    '''Test closing Valve.'''
+    """Test closing Valve."""
     mock_serial_instance = MagicMock()
     mock_serial.return_value = mock_serial_instance
 
@@ -68,7 +70,7 @@ def test_close_valve(mock_serial: Any) -> None:
 
 @patch("serial.Serial")
 def test_stop(mock_serial: Any) -> None:
-    '''Test stopping Valve.'''
+    """Test stopping Valve."""
     mock_serial_instance = MagicMock()
     mock_serial.return_value = mock_serial_instance
 
