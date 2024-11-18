@@ -26,7 +26,7 @@ This library provides control of the U.S. Solid 1/4" Stainless Steel Motorized B
 
 ## Features
 
-- Track valves, open/close valves, stop valves
+- Track, open, close, and stop valves
 
 ## Requirements
 
